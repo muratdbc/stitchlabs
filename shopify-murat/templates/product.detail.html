@@ -1,0 +1,21 @@
+<div>
+<label >Title</label>
+<p>{{product.title}}</p>
+<label >Vendor</label>
+<p>{{product.vendor}}</p>
+<div>
+  <label>Variants</label>
+  <ul ng-repeat="variant in product.variants">
+    <li >
+    Fulfillment Service :{{variant.fulfillment_service}}
+    </li>
+    <li>
+      Product id:{{variant.product_id}}
+    </li>
+  </ul>
+</div>
+<label >Images</label>
+<div>
+<img ng-src="{{product.image.src}}" alt="">
+</div>
+</div>
